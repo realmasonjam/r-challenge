@@ -1,0 +1,29 @@
+{
+  "name": "r-challenge",
+  "version": "1.0.0",
+  "description": "A simple express app to provide a property API",
+  "main": "app.js",
+  "scripts": {
+    "start": "node ./app.js",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/realmasonjam/r-challenge.git"
+  },
+  "keywords": [
+    "express",
+    "node",
+    "property"
+  ],
+  "author": "Mason Jam",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/realmasonjam/r-challenge/issues"
+  },
+  "homepage": "https://github.com/realmasonjam/r-challenge#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1"
+  }
+}

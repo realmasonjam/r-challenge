@@ -7,9 +7,6 @@ app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json())
 app.use('/', router)
 
-
-const port = 3000
-
 propertyList = []
 
 app.get('/', (req, res) => {
@@ -27,10 +24,6 @@ app.post('/', function (req, res) {
   res.send('Got a POST request')
 })
 
-app.listen(port, () => {
-  console.log(`Example app listening at http://localhost:${port}`)
-})
-
 function updatePriceRange(propertyList, suburb) {
   filteredPropertyList = propertyList.filter((element) => element.suburb === suburb )
   suburbAveragePrice = (filteredPropertyList.map((element) => element.price))
@@ -45,3 +38,5 @@ function updatePriceRange(propertyList, suburb) {
       element.priceRange = 'Lower than average'
   });
 }
+
+module.exports = app

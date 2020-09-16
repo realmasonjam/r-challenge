@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Adds 3 different properties and get all of them 1`] = `
+Array [
+  Object {
+    "address": "1 Williams Road, Prahran, Vic 3181",
+    "description": "Auction",
+    "price": 4000000,
+    "priceRange": "Greater than average",
+    "suburb": "Prahran",
+    "suburbAveragePrice": 1766666.6666666667,
+  },
+  Object {
+    "address": "1/78-80 Commercial Road, Prahran, Vic 3181",
+    "description": "Auction",
+    "price": 700000,
+    "priceRange": "Lower than average",
+    "suburb": "Prahran",
+    "suburbAveragePrice": 1766666.6666666667,
+  },
+  Object {
+    "address": "21 St Edmonds Road, Prahran, Vic 3181",
+    "description": "Private Sale",
+    "price": 600000,
+    "priceRange": "Lower than average",
+    "suburb": "Prahran",
+    "suburbAveragePrice": 1766666.6666666667,
+  },
+]
+`;
+
+exports[`Posts a property and get the same property 1`] = `
+Array [
+  Object {
+    "address": "17 Carroll Street, Richmond, Vic 3121",
+    "description": "Private Sale",
+    "price": 1500000,
+    "priceRange": "Equal to average",
+    "suburb": "Richmond",
+    "suburbAveragePrice": 1500000,
+  },
+]
+`;
